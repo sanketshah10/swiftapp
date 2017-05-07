@@ -12,14 +12,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var heading: UILabel!
     
-    var tapcount = 0
+    @IBOutlet weak var text1: UITextField!
     
+    @IBOutlet weak var text2: UITextField!
+    
+   
     @IBAction func buttonpressed(sender: AnyObject) {
-       tapcount = tapcount + 1
-        
-        if tapcount >= 10 {
-            heading.text = "You tapped the button 10 times"
-        }
+      
+  heading.text = "Answer is \(Double(text1.text!)! + Double(text2.text!)!)"
         
     }
 
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = UIColor.blueColor()
+        self.view.backgroundColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {

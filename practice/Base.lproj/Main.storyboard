@@ -31,17 +31,44 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bya-g5-rIN">
+                                <rect key="frame" x="250" y="159" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="PD2-H2-Yv4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evC-4S-NOG">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pdb-FU-rsX">
+                                <rect key="frame" x="251" y="216" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4L1-hE-q8b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KRd-jb-26E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0CH-MR-qpU"/>
+                            <constraint firstItem="Pdb-FU-rsX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3eD-yo-3QB"/>
                             <constraint firstItem="MAC-dJ-n4h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="PTD-kw-cF0"/>
                             <constraint firstItem="MAC-dJ-n4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WZj-jJ-ay3"/>
+                            <constraint firstItem="Pdb-FU-rsX" firstAttribute="top" secondItem="Bya-g5-rIN" secondAttribute="bottom" constant="27" id="g1i-XD-rRX"/>
+                            <constraint firstItem="Bya-g5-rIN" firstAttribute="top" secondItem="MAC-dJ-n4h" secondAttribute="bottom" constant="29" id="i4O-RN-0hd"/>
+                            <constraint firstItem="Bya-g5-rIN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pWp-tY-oeE"/>
                             <constraint firstItem="KRd-jb-26E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="q9S-mw-HaT"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="heading" destination="KRd-jb-26E" id="BYa-Yi-3ow"/>
+                        <outlet property="text1" destination="Bya-g5-rIN" id="vpH-OL-jkg"/>
+                        <outlet property="text2" destination="Pdb-FU-rsX" id="Xna-G2-fBf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
